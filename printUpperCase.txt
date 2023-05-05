@@ -1,0 +1,7 @@
+VAR codigoAsciiLetra, 0 -- Declara a variável codigoAsciiLetra (ficará na posição 0).
+MOVE codigoAsciiLetra, 65 -- Coloco na variável codigoAsciiLetra o valor 65
+escreve: INT 2, codigoAsciiLetra -- imprime o caracter ascii presente na variável
+ADD codigoAsciiLetra, 1 -- Incrementa o valor presente na variável
+CMENOR codigoAsciiLetra, 91 -- faz a comparação da variável com 91
+JTRUE escreve -- Se o registrador CR está com valor 1, jump para o label escreve
+HALT

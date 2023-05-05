@@ -1,0 +1,25 @@
+VAR valor, 0
+INT 1, valor
+CMENOR valor, 48 -- caracter '0'
+JTRUE erro
+CMAIOR valor, 57 -- caracter '9'
+JTRUE erro
+SUBT valor, 48
+MOVE A, valor
+enquanto: CMENOR valor, 2
+JTRUE fim   
+SUBT valor, 1
+MULT A, valor   
+JUMP enquanto 
+fim: MOVE valor, A
+ADD valor, 32
+INT 2, valor			
+HALT						
+erro: MOVE valor, 69 -- 'E'
+INT 2, valor	
+MOVE valor, 82 -- 'R'			
+INT 2, valor	
+INT 2, valor
+MOVE valor, 79 -- 'O'
+INT 2, valor
+HALT
